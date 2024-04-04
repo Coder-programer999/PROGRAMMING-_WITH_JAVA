@@ -1,0 +1,27 @@
+// Spy Number: sum of number = product of number
+import java.util.Scanner;
+public class Main {
+public boolean spy(int a ) {
+int dig, p=1,sum=0;
+while(a>0) {
+dig = a%10;
+sum = sum + dig;
+p = p*dig;
+
+}
+return sum == p;
+}
+public static void main(String args[]) {
+//As we are calling the method in the main class no objec is requird.
+Scanner sc = new Scanner(System.in);
+System.out.println("Enter your number");
+int num = sc.nextImt();
+if(spy(num)) {
+System.out.println("The number is Spy number");
+}
+else {
+System.out.println("The number is not a Spy number");
+}
+}
+}
+}
