@@ -1,7 +1,7 @@
 // Spy Number: sum of number = product of number
 import java.util.Scanner;
 public class Main {
-public boolean spy(int a ) {
+public static boolean spy(int a ) {
 int dig, p=1,sum=0;
 while(a>0) {
 dig = a%10;
